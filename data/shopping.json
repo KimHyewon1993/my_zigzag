@@ -1,0 +1,31 @@
+{
+    "items":[
+        {
+            "num":"1",
+            "contents":[
+                {
+                    "desc":"화해 유저의 호평을 받은 제품들을 소개드려요.",
+                    "thumb":"./images/shopping01.jpg"
+                }
+            ]
+        },
+        {
+            "num":"2",
+            "contents":[
+                {
+                    "desc":"화해 MD가 매주 새로운 제품을 소개드려요",
+                    "thumb":"./images/shopping02.jpg"
+                }
+            ]
+        },
+        {
+            "num":"3",
+            "contents":[
+                {
+                    "desc":"화장품 정보 탐색에서 구매까지 한번에",
+                    "thumb":"./images/shopping03.jpg"
+                }
+            ]
+        }
+    ]
+}

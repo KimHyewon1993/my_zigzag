@@ -1,0 +1,108 @@
+.footer {
+    padding: 75px 20px;
+    background: #ffefff;
+    color: #212529;
+    font-size: 15px;
+    letter-spacing: -.83px;
+    @include tablet {
+        padding: 50px 20px;
+    }
+    @include mobile {
+        padding: 30px 20px;
+        font-size: 13px;
+    }
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+    .address {
+        margin-top: 20px;
+        @include tablet {
+            margin-top: 0;
+        }
+    }
+    .line-box {padding-top: 7px;}
+    .addr {
+        display: inline-block;
+        position: relative;
+        .strong {
+            padding-right: 9px;
+            color: #727777;
+        }
+        &+.addr::before {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 0 20px;
+            background: #c9cccc;
+            @include mobile {
+                display: none;
+            }
+        }
+        &.tel::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 0 20px;
+            background: #c9cccc;
+            @include mobile {
+                display: none;
+            }
+        }
+        &.mobile::after {
+            @include mobile {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 10px;
+                margin: 0 20px;
+                background: #c9cccc;
+            }
+        }
+        &.mobile-margin {
+            @include mobile {
+                margin-top: 7px;
+            }
+        }
+        &.mobile-line {
+            @include mobile {
+                display: inline-block;
+            }
+        }
+    }
+    .m-box {
+        @include mobile {
+            display: block;
+            padding-top: 47px;
+        }
+    }
+    .link-privacy {
+        display: block;
+        padding-top: 27px;
+        font-weight: bold;
+        color: #212529;
+        @include mobile {
+            padding-top: 7px;
+        }
+    }
+    .copy {padding-top: 8px;}
+    .sns-list {
+        display: flex;
+        @include mobile {
+            margin-top: 30px;
+        }
+    }
+    .sns-item {
+        padding-right: 10px;
+    }
+    .link-sns {
+        display: block;
+        height: 36px;
+        width: 36px;
+    }
+}
