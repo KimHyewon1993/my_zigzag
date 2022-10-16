@@ -1,10 +1,10 @@
 .header {
+    position: fixed;
     top: 0;
     left: 0;
-    position: fixed;
-    z-index: 500;
     width: 100%;
     height: 80px;
+    z-index: 500;
     @include tablet {
         height: 64px;
     }
@@ -22,11 +22,11 @@
                     content: '';
                     position: absolute;
                     display: flex;
-                    height: 2px;
-                    background: #FA6EE3;
                     left: 8px;
                     right: 8px;
                     bottom: 20px;
+                    height: 2px;
+                    background: #FA6EE3;
                     @include tablet {
                         display: none;
                     }
@@ -37,11 +37,11 @@
                     content: '';
                     position: absolute;
                     display: flex;
-                    height: 2px;
-                    background: #FA6EE3;
                     left: 8px;
                     right: 8px;
                     bottom: 20px;
+                    height: 2px;
+                    background: #FA6EE3;
                     @include tablet {
                         display: none;
                     }
@@ -57,8 +57,8 @@
     .inner {
         position: relative;
         display: flex;
-        height: 100%;
         width: 100%;
+        height: 100%;
     }
     .logo {
         position: absolute;
@@ -89,12 +89,97 @@
             height: 100%;
         }
     }
-    .btn-menu {
+    .gnb {
+        width: 100%;
+        height: 100%;
+        z-index: 50;
         @include tablet {
+            display: none;
+            padding-top: 64px;
+        }
+        &.active {
+            display: block;
+            width: 100%;
+            background: #fff;
+        }
+    }
+    .gnb-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        padding-bottom: 12px;
+        @include tablet {
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            padding-bottom: 0;
+            background: #fff;
+            box-shadow: 0 4px 4px -4px #000;
+        }
+    }
+    .gnb-item {
+        padding: 0 22px 5px;
+        @include tablet {
+            width: 100%;
+            padding: 0;
+            text-align: left;
+            background: #fff;
+        }
+    }
+    .link-gnb {
+        position: relative;
+        padding: 24px 12px;
+        font-size: 18px;
+        color: #fff;
+        @include tablet {
+            position: static;
+            display: block;
+            padding: 15px 30px;
+            font-size: 15px;
+            color: #212529;
+        }
+        &.active {
+            &::after {
+                content: '';
+                position: absolute;
+                display: flex;
+                left: 8px;
+                right: 8px;
+                bottom: 20px;
+                height: 2px;
+                background: #fff;
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+        &:hover {
+            &::after {
+                content: '';
+                position: absolute;
+                display: flex;
+                left: 8px;
+                right: 8px;
+                bottom: 20px;
+                height: 2px;
+                background: #fff;
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+    }
+    .btn-menu {
+        display: none;
+        z-index: 50;
+        @include tablet {
+            display: block;
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
             right: 30px;
+            transform: translateY(-50%);
             background: transparent;
             cursor: pointer;
         }
@@ -116,84 +201,34 @@
             }
         }
     }
-    .gnb {
-        height: 100%;
-        width: 100%;
-        @include tablet {
-            padding-top: 64px;
-            display: none;
-        }
-        &.active {
-            background: #fff;
-            width: 100%;
+    .download {
+        display: none;
+        @include mobile {
             display: block;
-        }
-    }
-    .gnb-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: 100%;
-        padding-bottom: 12px;
-        @include tablet {
-            flex-direction: column;
-            align-items: start;
-            justify-content: start;
-            background: #fff;
-            padding-bottom: 0;
-            box-shadow: 0 4px 4px -4px #000;
-        }
-    }
-    .gnb-item {
-        padding: 0 22px 5px;
-        @include tablet {
-            text-align: left;
+            position: relative;
+            left: 0;
+            bottom: 0;
             width: 100%;
-            background: #fff;
-            padding: 0;
+            height: 100vh;
+            padding: 0 40px;
+            transition: 0.5s;
         }
-    }
-    .link-gnb {
-        position: relative;
-        color: #fff;
-        font-size: 18px;
-        padding: 24px 12px;
-        @include tablet {
-            position: static;
-            display: block;
-            padding: 15px 30px;
-            font-size: 15px;
-            color: #212529;
-        }
-        &.active {
-            &::after {
-                content: '';
+        .link-down {
+            @include mobile {
                 position: absolute;
-                display: flex;
-                height: 2px;
-                background: #fff;
-                left: 8px;
-                right: 8px;
-                bottom: 20px;
-                @include tablet {
-                    display: none;
-                }
-            }
-        }
-        &:hover {
-            &::after {
-                content: '';
-                position: absolute;
-                display: flex;
-                height: 2px;
-                background: #fff;
-                left: 8px;
-                right: 8px;
-                bottom: 20px;
-                @include tablet {
-                    display: none;
-                }
+                bottom: 165px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+                height: 58px;
+                border-radius: 6px;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 58px;
+                text-align: center;
+                background: #FA6EE3;
+                color: #fff;
+                transition: 0.5s;
             }
         }
     }

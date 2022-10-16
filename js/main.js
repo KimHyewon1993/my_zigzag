@@ -14,7 +14,7 @@ $(function(){
         tl.to(menu, {
             duration: 1,
             opacity: 1,
-            height: '47vh',
+            height: '50vh',
             ease: 'expo.inOut',
             className :'gnb active'
         })
@@ -43,6 +43,17 @@ $(function(){
             $('.header').removeClass('scroll');
         }
     });
+    
+    gsap.to('.download',{
+        scrollTrigger:{
+            trigger:'.sc-info',
+            start: 'top-100% bottom',
+            end: 'top bottom',
+            scrub: 1,
+        },
+        opacity:0,
+        display:'none'
+    })
 
 // sc-visual ------------------------------------------
 
@@ -96,7 +107,6 @@ $(function(){
         $('.sc-info .text-item').eq(idx).addClass('active').siblings().removeClass('active');
     })
 
-
     $('.sc-info .text-item').click(function(e){
         e.preventDefault();
         idx = $(this).index();
@@ -108,11 +118,6 @@ $(function(){
         $(this).addClass('active').siblings().removeClass('active');
     })
 
-    /**
-     * @frame = '[data-sort=1]'
-     * 
-     */
-    
     function sort(frame,index1,index2,index3,index4){
         current = $(frame).find('.current');
 
@@ -138,12 +143,11 @@ $(function(){
             [width3,height3,position3],
             [width4,height4,position4]
         ]
-
-            current.delay(1000).animate({left:array[index1][2],width:array[index1][0],height:array[index1][1]},1000)
-            current.delay(1000).animate({left:array[index2][2],width:array[index2][0],height:array[index2][1]},1000)
-            current.delay(1000).animate({left:array[index3][2],width:array[index3][0],height:array[index3][1]},1000)
-            current.delay(1000).animate({left:array[index4][2],width:array[index4][0],height:array[index4][1]},1000)
-                        
+        
+        current.delay(1000).animate({left:array[index1][2],width:array[index1][0],height:array[index1][1]},1000)
+        current.delay(1000).animate({left:array[index2][2],width:array[index2][0],height:array[index2][1]},1000)
+        current.delay(1000).animate({left:array[index3][2],width:array[index3][0],height:array[index3][1]},1000)
+        current.delay(1000).animate({left:array[index4][2],width:array[index4][0],height:array[index4][1]},1000)             
     }
     sort('[data-sort=1]',2,3,1,0);
     sort('[data-sort=2]',2,1,0,3);

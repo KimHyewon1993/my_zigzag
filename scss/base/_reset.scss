@@ -5,13 +5,11 @@ img, picture, video, canvas, svg {display: block;max-width:100%;}
 a {text-decoration:none}
 table {border-collapse:collapse;border-spacing:0}
 ul, ol {list-style: none;}
-
 button {border: none;}
 
 body {
-  
-    color: #222;
     font-size: 14px;
     font-weight: 400;
     font-family: $font-kr;
+    color: #222;
 }

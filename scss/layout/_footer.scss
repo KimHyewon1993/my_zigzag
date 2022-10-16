@@ -1,9 +1,9 @@
 .footer {
     padding: 75px 20px;
-    background: #ffefff;
-    color: #212529;
     font-size: 15px;
     letter-spacing: -.83px;
+    background: #ffefff;
+    color: #212529;
     @include tablet {
         padding: 50px 20px;
     }
@@ -26,8 +26,8 @@
     }
     .line-box {padding-top: 7px;}
     .addr {
-        display: inline-block;
         position: relative;
+        display: inline-block;
         .strong {
             padding-right: 9px;
             color: #727777;
