@@ -14,7 +14,7 @@ $(function(){
         tl.to(menu, {
             duration: 1,
             opacity: 1,
-            height: '50vh',
+            height: '60vh',
             ease: 'expo.inOut',
             className :'gnb active'
         })

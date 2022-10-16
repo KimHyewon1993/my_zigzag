@@ -23,8 +23,7 @@
 @media (max-width: 1023px) {
   .title-box .sc-title {
     display: block;
-    font-size: 40px;
-    line-height: 42px;
+    font-size: 8vw;
     text-align: center;
   }
 }
@@ -37,8 +36,7 @@
   .title-box .desc {
     padding-top: 15px;
     margin-top: 19px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 3.5vw;
     text-align: center;
   }
 }
@@ -538,6 +536,11 @@ body {
   color: #fff;
   opacity: 0;
 }
+@media (max-width: 767px) {
+  .sc-visual .main-text {
+    width: 90%;
+  }
+}
 .sc-visual .main-text .txtLine01 {
   display: block;
   font-size: 85px;
@@ -550,8 +553,7 @@ body {
 }
 @media (max-width: 767px) {
   .sc-visual .main-text .txtLine01 {
-    font-size: 54px;
-    line-height: 68px;
+    font-size: 12vw;
   }
 }
 .sc-visual .main-text .txtLine02 {
@@ -566,7 +568,7 @@ body {
 }
 @media (max-width: 767px) {
   .sc-visual .main-text .txtLine02 {
-    font-size: 19px;
+    font-size: 4vw;
     padding-top: 20px;
   }
 }
@@ -593,7 +595,7 @@ body {
 @media (max-width: 767px) {
   .sc-visual .sub-text .sub-desc {
     padding: 10px 0;
-    font-size: 17px;
+    font-size: 4.5vw;
   }
 }
 @media (max-width: 767px) {
@@ -867,7 +869,7 @@ body {
 }
 @media (max-width: 767px) {
   .sc-review .group-box .sort {
-    font-size: 22px;
+    font-size: 3.5vw;
   }
 }
 .sc-review .img-area {

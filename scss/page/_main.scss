@@ -28,6 +28,9 @@
         text-align: center;
         color: #fff;
         opacity: 0;
+        @include mobile {
+            width: 90%;
+        }
         .txtLine01 {
             display: block;
             font-size: 85px;
@@ -36,8 +39,7 @@
                 font-size: 70px;
             }
             @include mobile {
-                font-size: 54px;
-                line-height: 68px;
+                font-size: 12vw;
             }
         }
         .txtLine02 {
@@ -48,7 +50,7 @@
                 font-size: 25px;
             }
             @include mobile {
-                font-size: 19px;
+                font-size: 4vw;
                 padding-top: 20px;
             }
         }
@@ -68,7 +70,7 @@
             }
             @include mobile {
                 padding: 10px 0;
-                font-size: 17px;
+                font-size: 4.5vw;
             }
         }
         @include mobile {
@@ -300,7 +302,7 @@
                 margin-top: 15px;
             }
             @include mobile {
-                font-size: 22px;
+                font-size: 3.5vw;
             }
         }
     }
