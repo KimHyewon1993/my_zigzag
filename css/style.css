@@ -23,8 +23,13 @@
 @media (max-width: 1023px) {
   .title-box .sc-title {
     display: block;
-    font-size: 8vw;
+    font-size: 5vw;
     text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .title-box .sc-title {
+    font-size: 7vw;
   }
 }
 .title-box .desc {
@@ -36,8 +41,13 @@
   .title-box .desc {
     padding-top: 15px;
     margin-top: 19px;
-    font-size: 3.5vw;
+    font-size: 2vw;
     text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .title-box .desc {
+    font-size: 3vw;
   }
 }
 
@@ -307,11 +317,11 @@ body {
   left: 30px;
   height: 100%;
   padding: 25px 0;
+  z-index: 100;
 }
 @media (max-width: 767px) {
   .header .logo {
     left: 15px;
-    z-index: 100;
   }
 }
 .header .link-logo {
@@ -477,8 +487,12 @@ body {
     transition: 0.5s;
   }
 }
+.header .download .link-down {
+  display: none;
+}
 @media (max-width: 767px) {
   .header .download .link-down {
+    display: block;
     position: absolute;
     bottom: 165px;
     left: 50%;
@@ -553,7 +567,7 @@ body {
 }
 @media (max-width: 767px) {
   .sc-visual .main-text .txtLine01 {
-    font-size: 12vw;
+    font-size: 10vw;
   }
 }
 .sc-visual .main-text .txtLine02 {
@@ -568,7 +582,7 @@ body {
 }
 @media (max-width: 767px) {
   .sc-visual .main-text .txtLine02 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding-top: 20px;
   }
 }
@@ -1112,12 +1126,12 @@ body {
 }
 @media (max-width: 1023px) {
   .sc-event .slide-item {
-    height: 680px;
+    height: 65vw;
   }
 }
 @media (max-width: 767px) {
   .sc-event .slide-item {
-    height: 500px;
+    height: 100vw;
   }
 }
 .sc-event .slide-item img {

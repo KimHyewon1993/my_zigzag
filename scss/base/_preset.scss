@@ -20,8 +20,11 @@
         color: #212529;
         @include tablet {
             display: block;
-            font-size: 8vw;
+            font-size: 5vw;
             text-align: center;
+        }
+        @include mobile {
+            font-size: 7vw;
         }
     }
     .desc {
@@ -31,8 +34,11 @@
         @include tablet {
             padding-top: 15px;
             margin-top: 19px;
-            font-size: 3.5vw;
+            font-size: 2vw;
             text-align: center;
+        }
+        @include mobile {
+            font-size: 3vw;
         }
     }
 }

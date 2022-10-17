@@ -66,9 +66,9 @@
         left: 30px;
         height: 100%;
         padding: 25px 0;
+        z-index: 100;
         @include mobile {
             left: 15px;
-            z-index: 100;
         }
     }
     .link-logo {
@@ -214,7 +214,9 @@
             transition: 0.5s;
         }
         .link-down {
+            display: none;
             @include mobile {
+                display: block;
                 position: absolute;
                 bottom: 165px;
                 left: 50%;

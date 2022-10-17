@@ -39,7 +39,7 @@
                 font-size: 70px;
             }
             @include mobile {
-                font-size: 12vw;
+                font-size: 10vw;
             }
         }
         .txtLine02 {
@@ -50,7 +50,7 @@
                 font-size: 25px;
             }
             @include mobile {
-                font-size: 4vw;
+                font-size: 3.5vw;
                 padding-top: 20px;
             }
         }
@@ -508,10 +508,10 @@
         border-radius: 20px;
         overflow: hidden;
         @include tablet {
-            height: 680px;
+            height: 65vw;
         }
         @include mobile {
-            height: 500px;
+            height: 100vw;
         }
         img {
             width: 100%;

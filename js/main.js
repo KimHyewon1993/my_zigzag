@@ -4,7 +4,7 @@ $(function(){
 
     let mm = gsap.matchMedia();
 
-    mm.add("(max-width: 1022px)", () => {
+    mm.add("(max-width: 1023px)", () => {
         const ham = document.querySelector(".btn-menu");
         const menu = document.querySelector('.gnb');
         const links = menu.querySelectorAll('.gnb-item');
@@ -178,7 +178,7 @@ $(function(){
     
     var swiper = new Swiper(".sc-shopping .swiper", {
         spaceBetween: 0,
-        // centeredSlides: true,
+        centeredSlides: true,
         autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -214,7 +214,7 @@ $(function(){
 
     var beautySlide1 = new Swiper(".sc-event .img-slide", {
         slidesPerView: 1.5,
-        spaceBetween: 70,
+        spaceBetween: 30,
         centeredSlides: true,
         loop: true,
         autoplay: {
