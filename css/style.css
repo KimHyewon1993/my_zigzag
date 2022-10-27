@@ -883,7 +883,9 @@ body {
 }
 @media (max-width: 767px) {
   .sc-review .group-box .sort {
+    padding: 0 15px;
     font-size: 3.5vw;
+    line-height: 30px;
   }
 }
 .sc-review .img-area {

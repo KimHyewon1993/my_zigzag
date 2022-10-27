@@ -302,7 +302,9 @@
                 margin-top: 15px;
             }
             @include mobile {
+                padding: 0 15px;
                 font-size: 3.5vw;
+                line-height: 30px;
             }
         }
     }
