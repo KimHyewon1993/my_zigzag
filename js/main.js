@@ -76,10 +76,10 @@ $(function(){
     })
     mainVis.addLabel('a')
     .to('.sc-visual .main-text span',{ opacity:0 },'a')
-    .to('.sc-visual .img-area img',{ scale:1.4},'a')
+    .to('.sc-visual .img-area img',{ scale:1.4 },'a')
     .to('.sc-visual .dimmed',{ opacity:1 },'a')
-    .to('.sc-visual .sub-desc',{ opacity:1, delay:0.3, stagger: 0.3,},'a+=0.5')
-    .to('.bg-wrapper',{ opacity:1})
+    .to('.sc-visual .sub-desc',{ opacity:1, delay:0.3, stagger: 0.3 },'a+=0.5')
+    .to('.bg-wrapper',{ opacity:1 })
     
 // sc-info ---------------------------------------------
 
@@ -110,11 +110,7 @@ $(function(){
     $('.sc-info .text-item').click(function(e){
         e.preventDefault();
         idx = $(this).index();
-        numVal = $(this).find('.num').data('num');
         swiper3.slideTo(idx)
-        if(!$(this).hasClass('active')){
-            new numberCounter("numData"+idx, numVal)
-        }
         $(this).addClass('active').siblings().removeClass('active');
     })
 
